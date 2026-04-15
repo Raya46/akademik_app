@@ -9,111 +9,109 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp">
-        <ImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="20dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/logo_akademik" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="SI Akademik Online"
+            android:text="Dashboard Admin"
             android:textColor="#0F172A"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:text="Cepat, Tepat, Terhubung."
-            android:textColor="#475569"
-            android:textSize="16sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="Silakan pilih peran pengguna untuk masuk ke dalam sistem akademik."
+            android:layout_marginTop="8dp"
+            android:text="Area ini disiapkan untuk pengelolaan data akademik dari sisi
+administrator."
             android:textColor="#64748B"
             android:textSize="14sp" />
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="4dp"
-            app:strokeColor="#D9E6F2"
-            app:strokeWidth="1dp">
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="18dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Portal Mahasiswa"
+                    android:text="Kelola Data Mahasiswa"
                     android:textColor="#0F172A"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Akses jadwal, nilai, profil, dan informasi akademik
-mahasiswa."
+                    android:layout_marginTop="6dp"
+                    android:text="Tambah, ubah, dan hapus data mahasiswa."
                     android:textColor="#64748B"
                     android:textSize="14sp" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMasukMahasiswa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Masuk sebagai Mahasiswa"
-                    app:cornerRadius="16dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="24dp"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="4dp"
-            app:strokeColor="#D9E6F2"
-            app:strokeWidth="1dp">
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="18dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Portal Admin"
+                    android:text="Kelola Jadwal Kuliah"
                     android:textColor="#0F172A"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Kelola data mahasiswa dan layanan administrasi akademik."
+                    android:layout_marginTop="6dp"
+                    android:text="Mengatur jadwal kuliah dan informasi akademik lainnya."
                     android:textColor="#64748B"
                     android:textSize="14sp" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMasukAdmin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Masuk sebagai Admin"
-                    app:cornerRadius="16dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelola Nilai"
+                    android:textColor="#0F172A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Mengelola input dan rekapitulasi nilai mahasiswa."
+                    android:textColor="#64748B"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKembaliHomeAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:text="Kembali"
+            app:cornerRadius="16dp" />
     </LinearLayout>
 </ScrollView>
